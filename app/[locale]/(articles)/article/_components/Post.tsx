@@ -1,8 +1,7 @@
 "use client";
 
-import { useT } from 'next-i18next/client';
 import { useParams } from 'next/navigation';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { TSuggestedItemData } from '@/app/_common/types/dataTypes';
 import { fetchArticles } from '@/app/_lib/react-query/utils';
@@ -25,7 +24,6 @@ export default function PostGrid() {
   });
 
   useEffect(() => {
-    console.log("tere", data);
     if (data) {
       const res = data.find((item) => item.slug === slug);
       setPostData(res);

@@ -1,5 +1,7 @@
 import { createStore } from 'zustand/vanilla';
 
+import { getFromLocalStorage, saveToLocalStorage } from '../_utils/local-sorage';
+
 export type BookmarkState = {
   articles: Array<number>;
 };
@@ -11,12 +13,7 @@ export type BookmarkActions = {
 
 export type BookmarkStore = BookmarkState & BookmarkActions;
 
-let storedItems = null;
-
-if (typeof window !== "undefined") {
-  storedItems = window?.localStorage.getItem("bookmarkedArticles");
-  console.log("storedItems", storedItems);
-}
+const storedItems = getFromLocalStorage("bookmarkedArticles");
 
 export const defaultInitState: BookmarkState = {
   articles: storedItems ? JSON.parse(storedItems) : "",
@@ -30,19 +27,13 @@ export const createBookmarkStore = (
     save: (id) =>
       set((state) => {
         const item = { articles: [...state.articles, id] };
-        window?.localStorage.setItem(
-          "bookmarkedArticles",
-          JSON.stringify(item.articles),
-        );
+        saveToLocalStorage("bookmarkedArticles", item.articles);
         return item;
       }),
     remove: (id) =>
       set((state) => {
         const item = { articles: state.articles.filter((item) => item !== id) };
-        window?.localStorage.setItem(
-          "bookmarkedArticles",
-          JSON.stringify(item.articles),
-        );
+        saveToLocalStorage("bookmarkedArticles", item.articles);
         return item;
       }),
   }));

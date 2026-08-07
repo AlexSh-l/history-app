@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect } from 'react';
-
 import { useBookmarkStore } from '@/app/_lib/zustand/StoreProvider';
 
 export default function BookmarkButton({ id }: { id: number }) {

@@ -1,8 +1,6 @@
 "use client";
 
-import { useT } from 'next-i18next/client';
 import { useParams } from 'next/navigation';
-import { useEffect } from 'react';
 
 import { TSuggestedItemData } from '@/app/_common/types/dataTypes';
 import { fetchArticles } from '@/app/_lib/react-query/utils';
@@ -11,18 +9,12 @@ import { useQuery } from '@tanstack/react-query';
 import PostCard from './PostCard.tsx';
 
 export default function PostGrid() {
-  // const { t, i18n } = useT("common");
   const params = useParams();
-  const locale = params.locale as string;
 
   const { data, isPending, isError, error } = useQuery({
     queryKey: ["articles"],
     queryFn: () => fetchArticles(),
   });
-
-  useEffect(() => {
-    console.log("tere", data);
-  }, [data, locale]);
 
   if (isPending) {
     return <div className="text-[#1D1B20] font-bold text-2xl">Pending...</div>;
