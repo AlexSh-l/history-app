@@ -16,8 +16,6 @@ export default function LanguageSwitcher() {
   const { i18n } = useTranslation();
   // const { i18n } = useT("common");
 
-  console.log("switcher lang", i18n.resolvedLanguage);
-
   const currentLocale =
     (params.locale as string) || i18nConfigRouter.defaultLocale;
   // const currentLocale = i18n.language || i18nConfigRouter.defaultLocale;

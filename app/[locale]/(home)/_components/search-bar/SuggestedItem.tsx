@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
 import { TSuggestedItemData } from '@/app/_common/types/dataTypes';
@@ -7,7 +8,10 @@ export default function SuggestedItem({ data }: { data: TSuggestedItemData }) {
   const locale = params.locale as string;
 
   return (
-    <div className="w-full flex items-center gap-3 justify-items-start text-black font-roboto-flex cursor-pointer">
+    <Link
+      href={`/${locale}/article/${data.slug}`}
+      className="w-full flex items-center gap-3 justify-items-start text-black font-roboto-flex cursor-pointer"
+    >
       <div className="w-full flex flex-col gap-2">
         <div className="flex flex-row items-start gap-1">
           <div className="text-[#828282] font-light text-xs capitalize  shrink-0">
@@ -19,6 +23,6 @@ export default function SuggestedItem({ data }: { data: TSuggestedItemData }) {
           {data.excerpt[locale]}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

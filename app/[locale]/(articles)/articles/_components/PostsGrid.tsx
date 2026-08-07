@@ -14,7 +14,6 @@ export default function PostGrid() {
   // const { t, i18n } = useT("common");
   const params = useParams();
   const locale = params.locale as string;
-  // const locale = i18n.resolvedLanguage || "be";
 
   const { data, isPending } = useQuery({
     queryKey: ["articles"],
@@ -23,7 +22,6 @@ export default function PostGrid() {
 
   useEffect(() => {
     console.log("tere", data);
-    // console.log("few", i18n.language, data && data[0]?.title[locale]);
   }, [data, locale]);
 
   return (
