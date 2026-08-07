@@ -1,0 +1,317 @@
+[
+    {
+        "id": 1,
+        "slug": "minsk",
+        "category": "cities",
+        "region": "minsk",
+        "title": {
+            "be": "Мінск",
+            "ru": "Минск",
+            "en": "Minsk"
+        },
+        "excerpt": {
+            "be": "Сталіца Беларусі, палітычны, эканамічны і культурны цэнтр краіны.",
+            "ru": "Столица Беларуси, политический, экономический и культурный центр страны.",
+            "en": "The capital of Belarus, the political, economic, and cultural center of the country."
+        },
+        "content": {
+            "be": "Мінск — старажытнае горад, упершыню згаданы ў Повесці мінулых гадоў пад 1067 годам. Сёння гэта сучасны мегаполіс з развітой інфраструктурай.",
+            "ru": "Минск — древний город, впервые упомянутый в Повести временных лет под 1067 годом. Сегодня это современный мегаполис с развитой инфраструктурой.",
+            "en": "Minsk is an ancient city, first mentioned in the Primary Chronicle under 1067. Today it is a modern metropolis with a developed infrastructure."
+        }
+    },
+    {
+        "id": 2,
+        "slug": "francisk-skaryna",
+        "category": "personalities",
+        "region": "vitebsk",
+        "title": {
+            "be": "Францыск Скарына",
+            "ru": "Франциск Скорина",
+            "en": "Francysk Skaryna"
+        },
+        "excerpt": {
+            "be": "Беларускі і ўсходнеславянскі першадрукар, асветнік-гуманіст.",
+            "ru": "Белорусский и восточнославянский первопечатник, просветитель-гуманист.",
+            "en": "Belarusian and Eastern Slavic printing pioneer, educator, and humanist."
+        },
+        "content": {
+            "be": "Нарадзіўся ў Полацку. У 1517 годзе ў Празе выдаў першую друкаваную беларускую кнігу — Псалтыр.",
+            "ru": "Родился в Полоцке. В 1517 году в Праге издал первую печатную белорусскую книгу — Псалтырь.",
+            "en": "Born in Polotsk. In 1517, he published the first printed Belarusian book, the Psalter, in Prague."
+        }
+    },
+    {
+        "id": 3,
+        "slug": "mir-castle",
+        "category": "history",
+        "region": "grodno",
+        "title": {
+            "be": "Мірскі замак",
+            "ru": "Мирский замок",
+            "en": "Mir Castle"
+        },
+        "excerpt": {
+            "be": "Унікальны помнік беларускага дойлідства, уключаны ў спіс Сусветнай спадчыны ЮНЕСКА.",
+            "ru": "Уникальный памятник белорусского зодчества, включенный в список Всемирного наследия ЮНЕСКО.",
+            "en": "A unique monument of Belarusian architecture, inscribed on the UNESCO World Heritage List."
+        },
+        "content": {
+            "be": "Замак быў закладзены напачатку XVI стагоддзя магнатам Ільінічам. Пазней стаў рэзідэнцыяй князёў Радзівілаў.",
+            "ru": "Замок был заложен в начале XVI века магнатом Ильиничем. Позже стал резиденцией князей Радзивиллов.",
+            "en": "The castle was founded in the early 16th century by the magnate Illinich. Later, it became the residence of the Radziwill princes."
+        }
+    },
+    {
+        "id": 4,
+        "slug": "brest-fortress",
+        "category": "history",
+        "region": "brest",
+        "title": {
+            "be": "Брэсцкая крэпасць",
+            "ru": "Брестская крепость",
+            "en": "Brest Fortress"
+        },
+        "excerpt": {
+            "be": "Крэпасць-герой, якая прыняла на сябе першы ўдар падчас Другой сусветнай вайны.",
+            "ru": "Крепость-герой, принявшая на себя первый удар во время Второй мировой войны.",
+            "en": "Hero Fortress that took the first blow during World War II."
+        },
+        "content": {
+            "be": "Пабудавана ў XIX стагоддзі. Абарона крэпасці ў чэрвені 1941 года стала сімвалам мужнасці і гераізму.",
+            "ru": "Построена в XIX веке. Оборона крепости в июне 1941 года стала символом мужества и героизма.",
+            "en": "Built in the 19th century. The defense of the fortress in June 1941 became a symbol of courage and heroism."
+        }
+    },
+    {
+        "id": 5,
+        "slug": "nesvizh-palace",
+        "category": "history",
+        "region": "minsk",
+        "title": {
+            "be": "Нясвіжскі палац",
+            "ru": "Несвижский дворец",
+            "en": "Nesvizh Palace"
+        },
+        "excerpt": {
+            "be": "Палацава-паркавы комплекс сям'і Радзівілаў у горадзе Нясвіж.",
+            "ru": "Дворцово-парковый комплекс семьи Радзивиллов в городе Несвиж.",
+            "en": "Palace and park complex of the Radziwill family in the city of Nesvizh."
+        },
+        "content": {
+            "be": "Закладзены ў 1583 годзе Мікалаем Радзівілам Сіроткам. Спалучае ў сабе рысы рэнесансу, барока і класіцызму.",
+            "ru": "Заложен в 1583 году Николаем Радзивиллом Сироткой. Сочетает в себе черты ренессанса, барокко и классицизма.",
+            "en": "Founded in 1583 by Nicholas Radziwill 'the Orphan'. It combines features of Renaissance, Baroque, and Classicism."
+        }
+    },
+    {
+        "id": 6,
+        "slug": "yanka-kupala",
+        "category": "personalities",
+        "region": "minsk",
+        "title": {
+            "be": "Янка Купала",
+            "ru": "Янка Купала",
+            "en": "Yanka Kupala"
+        },
+        "excerpt": {
+            "be": "Класік беларускай літаратуры, паэт, драматург і публіцыст.",
+            "ru": "Классик белорусской литературы, поэт, драматург и публицист.",
+            "en": "Classic of Belarusian literature, poet, playwright, and publicist."
+        },
+        "content": {
+            "be": "Сапраўднае імя — Іван Дамінікавіч Луцэвіч. Яго творчасць адлюстроўвае дух і барацьбу беларускага народа за незалежнасць.",
+            "ru": "Настоящее имя — Иван Доминикович Луцевич. Его творчество отражает дух и борьбу белорусского народа за независимость.",
+            "en": "Real name — Ivan Lutsevich. His work reflects the spirit and struggle of the Belarusian people for independence."
+        }
+    },
+    {
+        "id": 7,
+        "slug": "belovezhskaya-pushcha",
+        "category": "culture",
+        "region": "brest",
+        "title": {
+            "be": "Бялавежская пушча",
+            "ru": "Беловежская пуща",
+            "en": "Belovezhskaya Pushcha"
+        },
+        "excerpt": {
+            "be": "Адзін з найстарэйшых запаведных лясоў Еўропы, дом для найбуйнейшай папуляцыі зуброў.",
+            "ru": "Один из старейших заповедных лесов Европы, дом для крупнейшей популяции зубров.",
+            "en": "One of the oldest protected forests in Europe, home to the largest population of European bison."
+        },
+        "content": {
+            "be": "Старажытны лес, які захаваўся ў адносна непарушаным стане. Знаходзіцца на мяжы Беларусі і Польшчы.",
+            "ru": "Древний лес, сохранившийся в относительно ненарушенном состоянии. Находится на границе Беларуси и Польши.",
+            "en": "An ancient forest preserved in a relatively undisturbed state. Located on the border of Belarus and Poland."
+        }
+    },
+    {
+        "id": 8,
+        "slug": "grodno-old-castle",
+        "category": "history",
+        "region": "grodno",
+        "title": {
+            "be": "Стары замак у Гродне",
+            "ru": "Старый замок в Гродно",
+            "en": "Old Castle in Grodno"
+        },
+        "excerpt": {
+            "be": "Каралеўская рэзідэнцыя на высокім беразе Нёмана.",
+            "ru": "Королевская резиденция на высоком берегу Немана.",
+            "en": "Royal residence on the high bank of the Neman River."
+        },
+        "content": {
+            "be": "Замак паўстаў у якасці ўмацавання ў XI стагоддзі. Быў перабудаваны ў палац у стылі рэнесансу для караля Стэфана Баторыя.",
+            "ru": "Замок возник в качестве укрепления в XI веке. Был перестроен в дворец в стиле ренессанса для короля Стефана Батория.",
+            "en": "The castle originated as a fortification in the 11th century. It was rebuilt into a Renaissance palace for King Stefan Batory."
+        }
+    },
+    {
+        "id": 9,
+        "slug": "vileyka-reservoir",
+        "category": "culture",
+        "region": "minsk",
+        "title": {
+            "be": "Вілейскае вадасховішча",
+            "ru": "Вилейское водохранилище",
+            "en": "Vileyka Reservoir"
+        },
+        "excerpt": {
+            "be": "Найбуйнейшы штучны вадаём Беларусі, папулярнае месца адпачынку.",
+            "ru": "Крупнейший искусственный водоем Беларуси, популярное место отдыха.",
+            "en": "The largest artificial reservoir in Belarus, a popular holiday destination."
+        },
+        "content": {
+            "be": "Створана ў 1970-я гады для забеспячэння вадой Мінска. З'яўляецца часткай Вілейска-Мінскай воднай сістэмы.",
+            "ru": "Создано в 1970-е годы для обеспечения водой Минска. Является частью Вилейско-Минской водной системы.",
+            "en": "Created in the 1970s to supply Minsk with water. It is part of the Vileyka-Minsk water system."
+        }
+    },
+    {
+        "id": 10,
+        "slug": "marat-kazey",
+        "category": "personalities",
+        "region": "minsk",
+        "title": {
+            "be": "Марат Казей",
+            "ru": "Марат Казей",
+            "en": "Marat Kazey"
+        },
+        "excerpt": {
+            "be": "Юны партызан-разведчык, Герой Савецкага Саюза падчас Другой сусветнай вайны.",
+            "ru": "Юный партизан-разведчик, Герой Советского Союза во время Второй мировой войны.",
+            "en": "Young partisan scout, Hero of the Soviet Union during World War II."
+        },
+        "content": {
+            "be": "Нарадзіўся ў Мінскай вобласці. Загінуў у баі ў узросце 14 гадоў, падарваўшы сябе і ворагаў апошняй гранатай.",
+            "ru": "Родился в Минской области. Погиб в бою в возрасте 14 лет, подорвав себя и врагов последней гранатой.",
+            "en": "Born in the Minsk region. He died in battle at the age of 14, blowing up himself and enemies with his last grenade."
+        }
+    },
+    {
+        "id": 11,
+        "slug": "polotsk-sofia-cathedral",
+        "category": "history",
+        "region": "vitebsk",
+        "title": {
+            "be": "Сафійскі сабор у Полацку",
+            "ru": "Софийский собор в Полоцке",
+            "en": "Saint Sophia Cathedral in Polotsk"
+        },
+        "excerpt": {
+            "be": "Адзін з самых ранніх храмаў старажытнай Русі, перабудаваны ў стылі віленскага барока.",
+            "ru": "Один из самых ранних храмов древней Руси, перестроенный в стиле виленского барокко.",
+            "en": "One of the earliest churches of ancient Rus, rebuilt in the Vilna Baroque style."
+        },
+        "content": {
+            "be": "Узведзены паміж 1044 і 1066 гадамі. Сёння служыць канцэртнай залай і музеем гісторыі архітэктуры.",
+            "ru": "Возведен между 1044 и 1066 годами. Сегодня служит концертным залом и музеем истории архитектуры.",
+            "en": "Erected between 1044 and 1066. Today it serves as a concert hall and a museum of architectural history."
+        }
+    },
+    {
+        "id": 12,
+        "slug": "gomel-palace-ensemble",
+        "category": "history",
+        "region": "gomel",
+        "title": {
+            "be": "Палацава-паркавы ансамбль Румянцавых-Паскевічаў",
+            "ru": "Дворцово-парковый ансамбль Румянцевых-Паскевичей",
+            "en": "Palace and Park Ensemble of the Rumyantsevs and Paskeviches"
+        },
+        "excerpt": {
+            "be": "Галоўная славутасць Гомеля, помнік архітэктуры класіцызму.",
+            "ru": "Главная достопримечательность Гомеля, памятник архитектуры классицизма.",
+            "en": "The main attraction of Gomel, a monument of classicism architecture."
+        },
+        "content": {
+            "be": "Будаўніцтва пачалося ў 1777 годзе па загадзе графа Румянцава. Палац акружаны маляўнічым паркам на беразе ракі Сож.",
+            "ru": "Строительство началось в 1777 году по приказу графа Румянцева. Дворец окружен живописным парком на берегу реки Сож.",
+            "en": "Construction began in 1777 by order of Count Rumyantsev. The palace is surrounded by a picturesque park on the banks of the Sozh River."
+        }
+    },
+    {
+        "id": 13,
+        "slug": "vitebsk-chagall-museum",
+        "category": "culture",
+        "region": "vitebsk",
+        "title": {
+            "be": "Дом-музей Марка Шагала",
+            "ru": "Дом-музей Марка Шагала",
+            "en": "Marc Chagall Home-Museum"
+        },
+        "excerpt": {
+            "be": "Месца, дзе знакаміты мастак правёў сваё юнацтва.",
+            "ru": "Место, где знаменитый художник провел свою юность.",
+            "en": "The place where the famous artist spent his youth."
+        },
+        "content": {
+            "be": "Музей адкрыты ў Віцебску на вуліцы Пакроўскай. Тут сабраны прадметы побыту пачатку XX стагоддзя і раннія малюнкі майстра.",
+            "ru": "Музей открыт в Витебске на улице Покровской. Здесь собраны предметы быта начала XX века и ранние рисунки мастера.",
+            "en": "The museum is open in Vitebsk on Pokrovskaya Street. It contains household items from the early 20th century and early drawings by the master."
+        }
+    },
+    {
+        "id": 14,
+        "slug": "mogilev-town-hall",
+        "category": "history",
+        "region": "mogilev",
+        "title": {
+            "be": "Магілёўская ратуша",
+            "ru": "Могилевская ратуша",
+            "en": "Mogilev Town Hall"
+        },
+        "excerpt": {
+            "be": "Сімвал гарадскога самакіравання Магілёва, адноўлены ў XXI стагоддзі.",
+            "ru": "Символ городского самоуправления Могилева, восстановленный в XXI веке.",
+            "en": "Symbol of Magilev city self-government, restored in the 21st century."
+        },
+        "content": {
+            "be": "Першая ратуша была пабудавана пасля атрымання горадам Магдэбургскага права. Цяперашні будынак — дакладная рэканструкцыя гістарычнай ратушы.",
+            "ru": "Первая ратуша была построена после получения городом Магдебургского права. Нынешнее здание — точная реконструкция исторической ратуши.",
+            "en": "The first town hall was built after the city received Magdeburg Rights. The current building is an exact reconstruction of the historical town hall."
+        }
+    },
+    {
+        "id": 15,
+        "slug": "vasil-bykov",
+        "category": "personalities",
+        "region": "vitebsk",
+        "title": {
+            "be": "Васіль Быкаў",
+            "ru": "Василь Быков",
+            "en": "Vasil Bykau"
+        },
+        "excerpt": {
+            "be": "Выбітны беларускі пісьменнік, грамадскі дзеяч, аўтар франтавых аповесцей.",
+            "ru": "Выдающийся белорусский писатель, общественный деятель, автор фронтовых повестей.",
+            "en": "An outstanding Belarusian writer, public figure, author of frontline novellas."
+        },
+        "content": {
+            "be": "Нарадзіўся ў Віцебскай вобласці. Большасць твораў прысвечана Вялікай Айчыннай вайне, дзе раскрываецца маральны выбар чалавека.",
+            "ru": "Родился в Витебской области. Большинство произведений посвящено Великой Отечественной войне, где раскрывается моральный выбор человека.",
+            "en": "Born in the Vitebsk region. Most of his works are dedicated to World War II, revealing the moral choice of a human being."
+        }
+    }
+]
