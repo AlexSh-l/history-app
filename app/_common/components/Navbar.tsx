@@ -12,7 +12,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="z-1 fixed top-8 px-7 flex items-center justify-center w-full bg-black/40">
+    <div className="z-1 fixed top-0 px-7 py-8 flex items-center justify-center w-full bg-black/40">
       <div className="px-7 flex items-center justify-between w-full max-w-7xl text-xs text-white font-roboto-flex font-normal">
         <Link href="/">Home</Link>
         <div>

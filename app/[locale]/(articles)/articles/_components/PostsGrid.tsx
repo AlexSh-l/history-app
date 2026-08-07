@@ -15,7 +15,7 @@ export default function PostGrid() {
   const params = useParams();
   const locale = params.locale as string;
 
-  const { data, isPending } = useQuery({
+  const { data, isPending, isError, error } = useQuery({
     queryKey: ["articles"],
     queryFn: () => fetchArticles(),
   });
@@ -24,19 +24,28 @@ export default function PostGrid() {
     console.log("tere", data);
   }, [data, locale]);
 
+  if (isPending) {
+    return <div className="text-[#1D1B20] font-bold text-2xl">Pending...</div>;
+  }
+
+  if (isError) {
+    return (
+      <div className="text-red-600 font-bold text-2xl">
+        Error: {error?.message}
+      </div>
+    );
+  }
+
   return (
     <div className="w-full flex flex-col flex-1 items-center justify-start bg-zinc-50 font-sans dark:bg-black">
-      {isPending && <>Pending...</>}
-      {!isPending && (
-        <div className="w-full">
-          <div className="uppercase pb-5">Latest</div>
-          <div className="grid grid-cols-2 gap-y-15 gap-x-10">
-            {data.map((item: TSuggestedItemData, i: number) => (
-              <PostCard data={item} key={`Article-Card_${i}`}></PostCard>
-            ))}
-          </div>
+      <div className="w-full">
+        <div className="uppercase pb-5">Latest</div>
+        <div className="grid grid-cols-2 gap-y-15 gap-x-10">
+          {data.map((item: TSuggestedItemData, i: number) => (
+            <PostCard data={item} key={`Article-Card_${i}`}></PostCard>
+          ))}
         </div>
-      )}
+      </div>
     </div>
   );
 }

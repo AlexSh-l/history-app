@@ -1,19 +1,18 @@
 "use client";
 
 import { useT } from 'next-i18next/client';
+import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useEffect } from 'react';
 
 import { TSuggestedItemData } from '@/app/_common/types/dataTypes';
-import { fetchArticles } from '@/app/_lib/react-query/utils';
-import { useQuery } from '@tanstack/react-query';
 
 export default function PostCard({ data }: { data: TSuggestedItemData }) {
   const params = useParams();
   const locale = params.locale as string;
 
   return (
-    <div className="w-full flex flex-col ">
+    <Link href={`/${locale}/article/${data.slug}`} className="w-full flex flex-col ">
       <div className="h-80 bg-orange-200"></div>
       <div className="pt-5">
         <div className="w-full flex flex-col gap-2.5">
@@ -33,6 +32,6 @@ export default function PostCard({ data }: { data: TSuggestedItemData }) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

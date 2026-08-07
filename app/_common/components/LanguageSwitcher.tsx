@@ -48,7 +48,7 @@ export default function LanguageSwitcher() {
     <select
       value={currentLocale}
       onChange={(e) => handleLanguageChange(e.target.value)}
-      className="p-2 border rounded bg-black"
+      className="p-2 border rounded bg-gray-700/40"
     >
       <option value="be">Беларуская (/be/...)</option>
       <option value="en">English (/en/...)</option>

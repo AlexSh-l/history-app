@@ -15,7 +15,9 @@ export default function PostGrid() {
 
   const [postData, setPostData] = useState<TSuggestedItemData>();
 
-  const { data, isPending, error } = useQuery<Array<TSuggestedItemData>>({
+  const { data, isPending, isError, error } = useQuery<
+    Array<TSuggestedItemData>
+  >({
     queryKey: ["article"],
     queryFn: () => fetchArticles(),
   });
@@ -28,10 +30,21 @@ export default function PostGrid() {
     }
   }, [data]);
 
+  if (isPending) {
+    return <div className="text-[#1D1B20] font-bold text-2xl">Pending...</div>;
+  }
+
+  if (isError) {
+    return (
+      <div className="text-red-600 font-bold text-2xl">
+        Error: {error?.message}
+      </div>
+    );
+  }
+
   return (
     <div className="w-full flex flex-col flex-1 items-center justify-start bg-zinc-50 font-sans dark:bg-black">
-      {isPending && <>Pending...</>}
-      {!isPending && postData && (
+      {postData ? (
         <div className="w-full flex flex-col gap-2.5">
           <div className="flex flex-row items-start gap-1">
             <div className="font-normal text-xs uppercase">
@@ -47,6 +60,10 @@ export default function PostGrid() {
           <div className="text-[#828282] font-light text-xl">
             {postData.content[locale]}
           </div>
+        </div>
+      ) : (
+        <div className="text-[#1D1B20] font-bold text-2xl">
+          No data to display
         </div>
       )}
     </div>
