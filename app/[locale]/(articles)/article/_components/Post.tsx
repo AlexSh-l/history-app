@@ -8,6 +8,8 @@ import { TSuggestedItemData } from '@/app/_common/types/dataTypes';
 import { fetchArticles } from '@/app/_lib/react-query/utils';
 import { useQuery } from '@tanstack/react-query';
 
+import BookmarkButton from './BookmarkButton';
+
 export default function PostGrid() {
   const params = useParams();
   const locale = params.locale as string;
@@ -53,6 +55,7 @@ export default function PostGrid() {
             <div className="text-[#828282] font-light text-xs capitalize shrink-0 max-w-3/5">
               | {postData.title[locale]}
             </div>
+            <BookmarkButton id={postData.id}></BookmarkButton>
           </div>
           <div className="text-[#1D1B20] font-bold text-2xl">
             {postData.excerpt[locale]}

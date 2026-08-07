@@ -10,6 +10,7 @@ import Footer from './_common/components/Footer';
 import Navbar from './_common/components/Navbar';
 import { i18nConfig, i18nConfigRouter } from './_lib/i18n/i18nConfig';
 import Providers from './_lib/react-query/providers';
+import { BookmarkStoreProvider } from './_lib/zustand/StoreProvider';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,9 +64,11 @@ export default async function RootLayout({
           fallbackLng={i18nConfigRouter.defaultLocale}
           resources={resources}
         >
-          <Navbar></Navbar>
-          <Providers>{children}</Providers>
-          <Footer></Footer>
+          <BookmarkStoreProvider>
+            <Navbar></Navbar>
+            <Providers>{children}</Providers>
+            <Footer></Footer>
+          </BookmarkStoreProvider>
         </I18nProvider>
       </body>
     </html>
