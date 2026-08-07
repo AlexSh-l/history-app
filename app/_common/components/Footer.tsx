@@ -8,6 +8,7 @@ import TwitterIcon from '../icons/footer/TwitterIcon';
 import VKIcon from '../icons/footer/VKIcon';
 import YouTubeIcon from '../icons/footer/YouTubeIcon';
 import { ESocialLinkTypes } from '../types/dataTypes';
+import LanguageSwitcher from './LanguageSwitcher';
 
 VKIcon;
 enum ELinkTypes {

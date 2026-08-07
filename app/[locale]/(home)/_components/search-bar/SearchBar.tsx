@@ -1,17 +1,22 @@
 "use client";
 
+import { useParams } from 'next/navigation';
 import { useDeferredValue, useEffect, useMemo, useState } from 'react';
 
 import { useDebounce } from '@/app/_common/hooks/useDebounce';
 import LookingGlass from '@/app/_common/icons/search-bar/LookingGlass';
-import { TSuggestedItemData } from '@/app/_common/types/dataTypes';
-import { fetchArticles, fetchArticlesByTitle } from '@/app/_lib/react-query/utils';
+import {
+    fetchArticles, fetchArticlesByTitle, TFetchArticlesByTitleProps
+} from '@/app/_lib/react-query/utils';
 import { useQuery } from '@tanstack/react-query';
 
 import SuggestedItem from './SuggestedItem';
 import Suggestions from './Suggestions';
 
 export default function SearchBar() {
+  const params = useParams();
+  const locale = params.locale as string;
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [value, setValue] = useState("");
   // const deferredValue = useDeferredValue(value);
@@ -23,7 +28,12 @@ export default function SearchBar() {
   });
 
   const filteredItems = useMemo(
-    () => fetchArticlesByTitle<TSuggestedItemData>(data, deferredValue),
+    () =>
+      fetchArticlesByTitle<TFetchArticlesByTitleProps>(
+        data,
+        deferredValue,
+        locale,
+      ),
     [deferredValue],
   );
 

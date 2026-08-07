@@ -6,9 +6,14 @@ export async function fetchArticles() {
   return result;
 }
 
-export function fetchArticlesByTitle<T extends TSuggestedItemData>(
+export type TFetchArticlesByTitleProps = TSuggestedItemData & {
+  locale: string;
+};
+
+export function fetchArticlesByTitle<T extends TFetchArticlesByTitleProps>(
   data: Array<T>,
   title: string,
+  locale: string,
 ) {
   if (!data || !data.length || !title) {
     return [];
@@ -16,6 +21,6 @@ export function fetchArticlesByTitle<T extends TSuggestedItemData>(
 
   return data.filter((item: T) => {
     if (!item) return [];
-    return item.title.en.toLowerCase().includes(title.toLowerCase());
+    return item.title[locale].toLowerCase().includes(title.toLowerCase());
   });
 }

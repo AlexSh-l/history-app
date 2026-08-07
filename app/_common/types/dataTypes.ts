@@ -7,16 +7,19 @@ export type TSuggestedItemData = {
     be: string;
     ru: string;
     en: string;
+    [key: string]: string;
   };
   excerpt: {
     be: string;
     ru: string;
     en: string;
+    [key: string]: string;
   };
   content: {
     be: string;
     ru: string;
     en: string;
+    [key: string]: string;
   };
 };
 
