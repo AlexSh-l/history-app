@@ -1,4 +1,3 @@
-// components/LanguageSwitcher.tsx
 "use client";
 
 import { useChangeLanguage, useT } from 'next-i18next/client';
@@ -11,14 +10,10 @@ export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
   const params = useParams();
-
-  // const changeLanguage = useChangeLanguage();
   const { i18n } = useTranslation();
-  // const { i18n } = useT("common");
 
   const currentLocale =
     (params.locale as string) || i18nConfigRouter.defaultLocale;
-  // const currentLocale = i18n.language || i18nConfigRouter.defaultLocale;
 
   const handleLanguageChange = (newLocale: string) => {
     if (!pathname) return;

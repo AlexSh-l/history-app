@@ -13,8 +13,6 @@ export default async function Articles({
 }) {
   const resolvedParams = await params;
 
-  // If the user visits `/articles`, resolvedParams.locale is undefined.
-  // Fall back safely to 'be' (Belarusian)
   const currentLocale = resolvedParams.locale || i18nConfigRouter.defaultLocale;
 
   const t = await getT(currentLocale, {keyPrefix: "common"});

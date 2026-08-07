@@ -37,7 +37,6 @@ type TRootLayoutProps = {
   params: Promise<{ locale?: string }>;
 };
 
-// initServerI18next(i18nConfig);
 initServerI18next({
   supportedLngs: i18nConfigRouter.locales,
   fallbackLng: i18nConfigRouter.defaultLocale,

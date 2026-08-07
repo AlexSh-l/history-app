@@ -32,3 +32,8 @@ export enum ESocialLinkTypes {
   TIKTOK = "Tiktok",
   TWITTER = "Twitter",
 }
+
+export type TFilters = {
+  category: Array<string>;
+  region: Array<string>;
+};
